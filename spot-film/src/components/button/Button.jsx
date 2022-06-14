@@ -1,10 +1,12 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-const Button = () => {
+import './button.scss';
+
+const Button = props => {
   return (
     <button
-      className={'btn ${props.className}'}
+      className={`btn ${props.className}`}
       onClick={props.onClick ? () => props.onClick() : null}
     >
       {props.children}
@@ -12,19 +14,19 @@ const Button = () => {
   );
 };
 
-const OutlineButton = (props) => {
+export const OutlineButton = props => {
   return (
     <Button
-      className={'btn-outline ${props.className}'}
+      className={`btn-outline ${props.className}`}
       onClick={props.onClick ? () => props.onClick() : null}
     >
       {props.children}
     </Button>
   );
-};
+}
 
 Button.propTypes = {
-  onclick: PropTypes.func,
+  onClick: PropTypes.func
 };
 
 export default Button;

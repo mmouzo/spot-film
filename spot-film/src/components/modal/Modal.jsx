@@ -1,5 +1,5 @@
-import React, { useState } from 'react'
-import PropTypes from 'prop-types'
+import React, { useState, useEffect, useRef } from 'react';
+import PropTypes from 'prop-types';
 
 import './modal.scss';
 
@@ -39,7 +39,7 @@ export const ModalContent = props => {
 
     return (
 
-        <div ref={contentRef} className="modal-content">
+        <div ref={contentRef} className="modal__content">
             {props.children}
 
 
