@@ -3,14 +3,19 @@ import queryString from 'query-string';
 import apiConfig from './apiConfig';
 
 /**
- * @description - This function is used to make a request to the API.
- */
+ * @description: axios client for api calls
+ * @param {string} url
+ * @param {object} data
+ * @param {string} method
+ * @param {object} headers
+ * @returns {object}
+ *  */
 const axiosClient = axios.create({
     baseURL: apiConfig.baseUrl,
     headers: {
         'Content-Type': 'application/json'
     },
-    paramsSerializer: params => queryString.stringify({ ...params, api_key: apiConfig.apiKey })
+    paramsSerializer: params => queryString.stringify({ ...params, api_key: apiConfig.apiKey, language: apiConfig.language })
 });
 
 axiosClient.interceptors.request.use(async (config) => config);

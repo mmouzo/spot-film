@@ -4,7 +4,7 @@ import { Link, useLocation } from "react-router-dom";
 
 import "./header.scss";
 
-import logo from "../../assets/icons8-film-60.png";
+import logo from "../../assets/icons8-film-reel-80.png";
 
 const headerNav = [
   {
@@ -49,7 +49,7 @@ const Header = () => {
       <div className="header__wrap container">
         <div className="logo">
           <img src={logo} alt="" />
-          <Link to="/">SpotFilm</Link>
+          <Link className="page-title" to="/">SpotFilm</Link>
         </div>
         <ul className="header__nav">
           {headerNav.map((e, i) => (
