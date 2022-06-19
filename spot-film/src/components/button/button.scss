@@ -33,16 +33,16 @@ button {
   transform: translateY(-2px);
   text-shadow: -0.5px 0 #1A1A1A, 0 .5px #1A1A1A, .5px 0 #1A1A1A, 0 -1px #1A1A1A;
 
-  }
+}
 
-  .btn:disabled {
-    pointer-events: none;
-  }
+.btn:disabled {
+  pointer-events: none;
+}
 
-  .btn:active {
-    box-shadow: none;
-    transform: translateY(0);
-  }
+.btn:active {
+  box-shadow: none;
+  transform: translateY(0);
+}
 
 .btn-outline {
   border: 3px solid $main-color;
@@ -59,16 +59,16 @@ button {
   transform: translateY(-2px);
   text-shadow: -0.5px 0 #1A1A1A, 0 .5px #1A1A1A, .5px 0 #1A1A1A, 0 -1px #1A1A1A;
 
-  }
+}
 
-  .btn-outline:disabled {
-    pointer-events: none;
-  }
+.btn-outline:disabled {
+  pointer-events: none;
+}
 
-  .btn-outline:active {
-    box-shadow: none;
-    transform: translateY(0);
-  }
+.btn-outline:active {
+  box-shadow: none;
+  transform: translateY(0);
+}
 
 .btn.small {
   border-width: 2px;

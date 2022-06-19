@@ -13,9 +13,11 @@ export const movieType = {
 
 export const tvType = {
     upcoming: "upcoming",
-    top_Rated: "top_rated",
-    on_the_air: "on_the_air"
+    top_rated: "top_rated",
+    popular: "popular"
 }
+
+
 
 const tmdbApi = {
     getMovies: (type, params) => {
