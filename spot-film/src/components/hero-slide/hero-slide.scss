@@ -59,6 +59,7 @@
                 font-size: 5rem;
                 font-weight: 700;
                 line-height: 1;
+                text-shadow: 1px 1px rgba(0, 0, 0, .01), 2px 2px rgba(0, 0, 0, .03), 3px 3px rgba(0, 0, 0, .025), 4px 4px rgba(0, 0, 0, .02), 5px 5px rgba(0, 0, 0, .015), 6px 6px rgba(0, 0, 0, .01), 7px 6px rgba(0, 0, 0, .01), 8px 8px rgba(0, 0, 0, .01), 9px 8px rgba(0, 0, 0, .01), 10px 10px rgba(0, 0, 0, .01), 11px 11px rgba(0, 0, 0, .01), 12px 12px rgba(0, 0, 0, .01), 13px 13px rgba(0, 0, 0, .01), 14px 14px rgba(0, 0, 0, .01), 15px 15px rgba(0, 0, 0, .01), 16px 16px rgba(0, 0, 0, .01), 17px 17px rgba(0, 0, 0, .01), 18px 18px rgba(0, 0, 0, .01), 19px 19px rgba(0, 0, 0, .01), 20px 20px rgba(0, 0, 0, .01), 21px 21px rgba(0, 0, 0, .01), 22px 22px rgba(0, 0, 0, .01), 23px 23px rgba(0, 0, 0, .01);
 
                 @include tablet {
                     font-size: 4rem;
@@ -68,7 +69,10 @@
             .overview {
                 font-weight: 300;
                 font-family: 'Lexend', sans-serif;
-                //text-align: justify;
+                line-height: 1.5;
+                // text-align: justify;
+                letter-spacing: .7px;
+                
             }
 
             .btns>*~* {
@@ -133,12 +137,12 @@
             transition-delay: .3s, .3s;
         }
 
-        .overview{
-            transition-delay: .6s, .6s ;
+        .overview {
+            transition-delay: .6s, .6s;
         }
 
-        .btns{
-            transition-delay: .9s, .9s ;
+        .btns {
+            transition-delay: .9s, .9s;
         }
     }
 

@@ -26,7 +26,7 @@ const MovieCard = props => {
                     <i className="bx bx-play"></i>
                 </Button>
             </div>
-            <h3>{item.title || item.name}</h3>
+            <p>{item.title || item.name}</p>
         </Link>
     )
 }
