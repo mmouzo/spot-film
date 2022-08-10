@@ -87,4 +87,75 @@
       background-color: $body-bg;
     }
   }
+
+  h2 {
+    margin-bottom: 0.5rem;
+  }
+}
+
+.casts {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(90px, 1fr));
+  gap: 11px;
+
+  &__item {
+    &__img {
+      padding-top: 160px;
+      background-size: cover;
+      margin-bottom: 0.5rem;
+      border-radius: $border-radius;
+    }
+
+    &__name {
+      font-size: 0.8rem;
+    }
+  }
+}
+
+.crew {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(90px, 1fr));
+  gap: 20px;
+
+  &__item {
+    &__img {
+      padding-top: 160px;
+      background-size: cover;
+      margin-bottom: 0.5rem;
+      border-radius: $border-radius;
+    }
+
+    &__name {
+      font-size: 0.8rem;
+    }
+  }
+
+  strong {
+    font-family: $text-font;
+  }
+}
+
+.video {
+  margin-bottom: 3rem;
+
+  &__title {
+    margin-bottom: 1.5rem;
+  }
+}
+
+.rating {
+  display: flex;
+  justify-content: flex-start;
+}
+.score {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 35px;
+  height: 35px;
+  background: #fff;
+  color: black;
+  font-weight: 500;
+  border-radius: 50%;
+  margin: 0;
 }
