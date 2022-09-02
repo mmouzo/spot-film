@@ -28,6 +28,7 @@ const CastList = (props) => {
             }}
           ></div>
           <p className="casts__item__name">{item.name}</p>
+          <i className="casts__item__name">{item.character}</i>
         </div>
       ))}
     </div>

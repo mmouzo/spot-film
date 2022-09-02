@@ -63,7 +63,7 @@
       padding-left: 0;
     }
 
-    & > * {
+    &>* {
       margin-bottom: 2rem;
     }
   }
@@ -74,23 +74,28 @@
   }
 
   .genres {
-    & > * ~ * {
+    &>*~* {
       margin-left: 0.5rem;
     }
 
     &__item {
       padding: 0.5rem 1rem;
-      border: 2px solid white;
+      border: 2px solid $main-color;
       border-radius: $border-radius;
       font-size: 0.8rem;
       font-weight: 600;
       background-color: $body-bg;
+      opacity: 0.9;  
     }
   }
 
   h2 {
     margin-bottom: 0.5rem;
   }
+}
+
+.overview {
+  line-height: 1.7;
 }
 
 .casts {
@@ -104,6 +109,7 @@
       background-size: cover;
       margin-bottom: 0.5rem;
       border-radius: $border-radius;
+      border: 0.5px solid $main-color;
     }
 
     &__name {
@@ -123,6 +129,7 @@
       background-size: cover;
       margin-bottom: 0.5rem;
       border-radius: $border-radius;
+      border: 0.5px solid $main-color;
     }
 
     &__name {
@@ -147,6 +154,7 @@
   display: flex;
   justify-content: flex-start;
 }
+
 .score {
   display: flex;
   align-items: center;

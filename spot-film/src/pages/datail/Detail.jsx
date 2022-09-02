@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { useParams } from "react-router";
 
+
 import apiConfig from "../../api/apiConfig";
 import tmdbApi from "../../api/tmdbApi";
 import MovieList from "../../components/movie-list/MovieList";
@@ -8,7 +9,11 @@ import MovieList from "../../components/movie-list/MovieList";
 import "../datail/detail.scss";
 import CastList from "./CastList";
 import CrewList from "./CrewList";
+import ProviderList from "./ProviderList";
 import VideoList from "./VideoList";
+
+
+
 
 const Detail = () => {
   const { category, id } = useParams();
@@ -70,6 +75,12 @@ const Detail = () => {
                     <h2>Crew</h2>
                   </div>
                   <CrewList id={item.id} />
+                </div>
+                <div className="cast">
+                  <div className="section__header">
+                    <h2>Providers</h2>
+                  </div>
+                
                 </div>
               </div>
             </div>

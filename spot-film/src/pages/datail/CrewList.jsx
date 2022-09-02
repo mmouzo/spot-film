@@ -9,6 +9,8 @@ const CrewList = (props) => {
 
   const [crew, setCrew] = useState([]);
 
+   
+
   useEffect(() => {
     const getCrew = async () => {
       const response = await tmdbApi.credits(category, props.id);
@@ -25,14 +27,17 @@ const CrewList = (props) => {
     getCrew();
   }, [category, props.id]);
 
+
+
   return (
     <div className="crew">
       {crew.map((item, index) => (
+
         <div key={index} className="crew__item">
           <div
             className="crew__item__img"
             style={{
-              backgroundImage: `url(${apiConfig.w500Image(item.profile_path)})`,
+              backgroundImage: `url(${apiConfig.w500Image(item.profile_path)})`
             }}
           ></div>
            <strong className="crew__item__name">{item.job}:</strong>
