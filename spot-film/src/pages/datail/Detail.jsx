@@ -79,6 +79,7 @@ const Detail = () => {
                 <div className="cast">
                   <div className="section__header">
                     <h2>Providers</h2>
+                    <ProviderList />
                   </div>
                 
                 </div>
