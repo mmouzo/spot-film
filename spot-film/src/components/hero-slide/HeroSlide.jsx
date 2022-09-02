@@ -2,6 +2,8 @@ import React, { useEffect, useRef, useState } from 'react';
 
 import SwiperCore, { Autoplay } from 'swiper';
 import { Swiper, SwiperSlide } from 'swiper/react';
+import { Link } from "react-router-dom";
+
 
 import Button, { OutlineButton } from '../button/Button';
 import Modal, { ModalContent } from '../modal/Modal';
@@ -105,9 +107,11 @@ const HeroSlideItem = props => {
                     <h2 className="title">{item.title}</h2>
                     <div className="overview">{item.overview}</div>
                     <div className="btns">
-                        <Button onClick={() => history.push('/movie/' + item.id)}>
+                        <Link to={'/movie/' + item.id}>
+                        <Button>
                             Watch Now
                         </Button>
+                        </Link>
                         <OutlineButton onClick={setModalActive}>
                             Watch trailer
                         </OutlineButton>
