@@ -3,9 +3,10 @@ import React from "react";
 import { Route, Routes } from "react-router-dom";
 
 import Catalog from "../pages/Catalog";
-import Detail from "../pages/datail/Detail";
+import Detail from "../pages/detail/Detail";
 import Home from "../pages/Home";
 
+// eslint-disable-next-line import/no-anonymous-default-export
 export default () => {
   return (
     <Routes>

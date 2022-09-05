@@ -63,7 +63,7 @@
       padding-left: 0;
     }
 
-    &>* {
+    & > * {
       margin-bottom: 2rem;
     }
   }
@@ -74,7 +74,7 @@
   }
 
   .genres {
-    &>*~* {
+    & > * ~ * {
       margin-left: 0.5rem;
     }
 
@@ -85,7 +85,7 @@
       font-size: 0.8rem;
       font-weight: 600;
       background-color: $body-bg;
-      opacity: 0.9;  
+      opacity: 0.9;
     }
   }
 
@@ -102,6 +102,7 @@
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(90px, 1fr));
   gap: 11px;
+  margin-bottom: 0.5em;
 
   &__item {
     &__img {
@@ -119,6 +120,7 @@
 }
 
 .crew {
+  margin-bottom: 0.8em;
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(90px, 1fr));
   gap: 20px;
@@ -140,6 +142,32 @@
   strong {
     font-family: $text-font;
   }
+}
+
+.provider {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(90px, 1fr));
+  gap: 20px;
+
+  &__item {
+    &__img {
+      width: 60px;
+      height: 60px;
+      background-size: cover;
+      margin-bottom: 0.5rem;
+      border-radius: $border-radius;
+      border: 0.5px solid $main-color;
+    }
+
+    &__name {
+      font-size: 0.8rem;
+    }
+  }
+}
+
+.not_avaliable {
+  margin-top: 0.5em;
+  margin-bottom: 0.5em;
 }
 
 .video {

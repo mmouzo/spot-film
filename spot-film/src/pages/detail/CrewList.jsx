@@ -27,17 +27,24 @@ const CrewList = (props) => {
     getCrew();
   }, [category, props.id]);
 
-
+if(crew.length === 0 || crew === null) {
+  return (
+  <div className="not_avaliable">
+    <p>Information not available</p>
+  </div>
+  );
+}
 
   return (
     <div className="crew">
       {crew.map((item, index) => (
 
+
         <div key={index} className="crew__item">
           <div
             className="crew__item__img"
             style={{
-              backgroundImage: `url(${apiConfig.w500Image(item.profile_path)})`
+              backgroundImage: `url(${apiConfig.w500Image(item.profile_path)})` 
             }}
           ></div>
            <strong className="crew__item__name">{item.job}:</strong>

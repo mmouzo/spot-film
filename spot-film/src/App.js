@@ -9,6 +9,7 @@ import Footer from "./components/footer/Footer";
 
 import Routes from "./config/Routes"
 
+
 function App() {
   return (
     <BrowserRouter>
